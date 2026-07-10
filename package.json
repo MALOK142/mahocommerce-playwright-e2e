@@ -1,0 +1,15 @@
+{
+  "name": "oris-mahocommerce-e2e",
+  "version": "1.0.0",
+  "description": "E2E Playwright suite for ORIS Test Automation Challenge - Task 2 (MahoCommerce)",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.0",
+    "@types/node": "^26.1.0",
+    "typescript": "^5.5.0"
+  }
+}
