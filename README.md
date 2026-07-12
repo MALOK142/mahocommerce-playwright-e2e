@@ -24,5 +24,5 @@ The suite is CI-ready via Playwright configuration (`forbidOnly`, retries/worker
 
 ## Notes for the interview
 
-- MahoCommerce selectors are isolated in `pages/*.ts` (Page Object Model). If the live DOM differs from what's assumed here (category label, coupon code), only the page objects need adjusting — the test logic in `tests/mahocommerce-checkout.spec.ts` stays the same.
-- Coupon assertions are intentionally excluded from automated pass criteria because no reliable valid promo code is available in the public demo environment.
+- I kept the MahoCommerce selectors inside `pages/*.ts` using a Page Object Model. This means that if the live UI changes, I usually only need to update the page objects, while the test flow in `tests/mahocommerce-checkout.spec.ts` stays readable and stable.
+- I did not include coupon validation in the automated pass criteria because the public demo store does not provide a reliable valid promo code for repeatable testing.
